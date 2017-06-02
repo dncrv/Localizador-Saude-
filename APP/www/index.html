@@ -1,0 +1,303 @@
+
+<!--         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyCS4TvZydSkE3klfSUnKPiGaQ9CqfcLEtc" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyA8rfbYuYWCq1NPhz3x_Cl2sAH-rkn2RJo" /> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src gap: file://* *; script-src 'self' 'unsafe-inline' https://*.gstatic.com https://*.googleapis.com http://dnsoft.esy.es http://www.saudesg.com.br/; 
+        style-src 'self' 'unsafe-inline' https://*.gstatic.com https://*.googleapis.com http://dnsoft.esy.es http://www.saudesg.com.br/; 
+        media-src *; 
+        img-src 'self' 'unsafe-inline' data:  https://*.gstatic.com https://*.googleapis.com http://www.saudesg.com.br/">
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Principal</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/principal.css">
+    
+</head>
+<body>
+
+<!--VERIFICAÇÃO INICIAL  dd-->
+
+<section id="corpo-app" class="paineis aparece ativo">
+    <div class="modal-cidade">
+        <p class="topo">
+            Selecione sua Cidade:
+        </p>
+        <div class="corpo">
+            <select id="select-cidades"></select>
+            <button id="btn-select-cidade">Selecionar Cidade</button>
+        </div>
+    </div>
+    <section class='todo'>
+        <img src="img/load.gif">
+    </section>
+</section>
+
+
+<!--TELA PRINCIPAL -->
+
+<div id="painel-principal" class="paineis some">
+    <section class="barra-info">
+            <div id="btn-voltar">
+                <p id="voltar-sair" class="menu-info"> <span id="volta-texto"></span></p>
+            </div>
+            <img id="img-info" src="img/informacoes.png">
+            <p id="nome-sessao"></p>
+    </section>
+
+    <section class="banner">
+        <img src="img/bannerPrincipal.jpg">
+    </section>
+
+    <section class='container-total'>
+        <div class="linha-botoes">
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn1" src="img/btn1.jpg">
+                    <p class="text-center">Prefeitura</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn2" src="img/btn2.jpg" >
+                    <p class="text-center">Marcação</p>
+                </div>
+            </div>
+            
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn3" src="img/btn3.jpg">
+                    <p class="text-center">Unidades</p>
+                </div>
+            </div>
+        </div>
+        <div class="linha-botoes">
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn4" src="img/btn4.jpg">
+                    <p class="text-center">Serviços</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn5" src="img/btn5.jpg">
+                    <p class="text-center">Aedes</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn6" src="img/btn6.jpg">
+                    <p class="text-center">Dentista</p>
+                </div>
+            </div>
+        </div>
+        <div class="linha-botoes">
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn7" src="img/btn7.jpg">
+                    <p class="text-center">Avalie</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn8" src="img/btn8.jpg">
+                    <p class="text-center">Notícias</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="botao">
+                    <img id="btn9" src="img/btn9.jpg">
+                    <p class="text-center">Cartão SUS</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+</div>
+
+
+<!-- FIM DA TELA PRINCIPAL -->
+
+<!-- MENU UNIDADES -->
+<section id="modalUnidade" class="paineis some"> 
+    <div id="modalUnidadeItens">
+    </div>
+</section>
+
+<!-- MENU DENTISTA -->
+<section id="modalDentista" class="paineis some"> 
+    <div id="modalDentistaItens">
+        <div>CONSULTÓRIO ODONTOLÓGICO</div>
+        <div>EMERGÊNCIA ODONTOLÓGICA</div>
+        <div>ATENDIMENTO ESPECIALIZADO</div>
+    </div>
+</section>
+
+<!-- ITENS DENTISTA -->
+    <section id="modalDentistaConsultorios" class="paineis some"> 
+        <div id="modalDentistaItensConsultorios">
+
+        </div>
+    </section>
+    <section id="modalDentistaEmergencia" class="paineis some"> 
+        <div id="modalDentistaItensEmergencia">
+
+        </div>
+    </section>
+    <section id="modalDentistaEspecializados" class="paineis some"> 
+        <div id="modalDentistaItensEspecializados">
+
+        </div>
+    </section>
+
+<!-- MENU SERVICO -->
+<section id="modalServicos" class="paineis some"> 
+    <div id="modalServicoItens">
+        <div>ESPECIALISTA</div>
+        <div>EXAMES</div>
+    </div>
+</section>
+
+<!-- ITENS SERVICOS -->
+    <section id="modalServicosEspecialista" class="paineis some"> 
+        <div id="modalServicoItensEspecialista">
+
+        </div>
+    </section>
+    <section id="modalServicosExames" class="paineis some"> 
+        <div id="modalServicoItensExames">
+
+        </div>
+    </section>
+
+
+<!-- MENU MARCACAO -->
+
+<section id="modalMarcacao" class="paineis some"> 
+    <iframe src="http://www.saudesg.com.br/"> <img src="img/load.gif">Carregando... </iframe>
+</section>
+
+<!-- MAPAS -->
+
+<section id="modalMapas" class="paineis some"> 
+    
+    <div id="menuMarcadores" class="paineis some" style="overflow-y: auto; border-top: 4px #008fc8 solid"></div>
+    <div id="map"></div>
+
+    <section id='bottom-map' class="barra-info bottom"  style="margin-bottom: 0 !important">
+        <p id="menu-mais" class="menu-info" style="margin: 0 !important; text-align: center; height: initial !important;">Mais</p>
+    </section>
+
+</section>
+
+
+
+<!-- MENU Dengue -->
+<section id="modalAedes" class="paineis some"> 
+    <form id="form-aedes" method="post" enctype="multipart/form-data">
+        <p class="text-center">Denuncie focos do mosquito...</p>
+            <label>Nome</label>
+            <input class="form-control" type="text" name="nome">
+            <label>Email</label>
+            <input class="form-control" type="text" name="email">
+            <label>Assunto</label>
+            <input class="form-control" type="text" name="assunto">
+            <label>Mensagem</label>
+            <textarea class="form-control" type="text" name="mensagem"></textarea>
+            <label>Foto</label>
+            <input class="form-control" type="file" name="foto">
+            <button class="btn btn-default btn-block" style="margin-top: 20px">Enviar</button>
+    </form>
+</section>
+
+
+<!-- MENU Avalie -->
+<section id="modalAvalie" class="paineis some"> 
+   
+    <form id="form-avalie" method="post" enctype="multipart/form-data">
+         <p class="text-center">Este canal serve para comunicação entre a Secretaria de Saúde e a população...</p>
+            <label>Nome</label>
+            <input id="avalie-nome" class="form-control" type="text" name="nome">
+            <label>Email</label>
+            <input id="avalie-email" class="form-control" type="text" name="email">
+            <label>Assunto</label>
+            <input id="avalie-assunto" class="form-control" type="text" name="assunto">
+            <label>Mensagem</label>
+            <textarea id="avalie-mensagem" class="form-control" type="text" name="mensagem"></textarea>
+            <label>Foto</label>
+            <input  id="avalie-foto" class="form-control" type="file" name="foto">
+            <button class="btn btn-default btn-block" style="margin-top: 20px">Enviar</button>
+    </form>
+</section>
+
+<!-- MENU Noticias -->
+<section id="modalNoticia" class="paineis some"> 
+    
+</section>
+
+
+<!-- MENU Informacoes -->
+<section id="modalInfo" class="paineis some"> 
+   <div id='alterar-cidade' onclick="alterarCidade();">Alterar Cidade</div>
+   <script type="text/javascript">
+       function alterarCidade(){
+        var confirma = confirm("Deseja mesmo trocar de cidade?");
+            if (confirma == true) {
+                modalInfo.style.display = 'none'; 
+                trocaPaineis(painelInicial, painelPrincipal)
+                voltaTexto.textContent = ''; 
+                imgInfo.style.display = 'block';
+                nomeSessao.style.display = 'none';
+                janela = 0;
+                storage.setItem("ssaude_cidade", "");
+                cidade = "";
+                app.initialize();
+                startApp();
+               }
+            } 
+   </script>
+   <div id='termos-de-uso' onclick="termoDeUso();">Termos de Uso</div>
+   <script type="text/javascript">
+       function termoDeUso(){
+        var confirma = confirm("O Saude.com SG é um APP que tem como finalidade auxiliar na busca pelo melhor local para seu atendimento. Não nos responsabilizamos por nada que possa ocorrer durante pelo uso do APP, sendo que o o mesmo serve apenas como auxiliar, nunca devendo ser tomado como sua unica fonte de informação em um momento de emergência.");
+            if (confirma == true) {
+               } else{
+                  termoDeUso()
+               }
+            } 
+   </script>
+   <div id='informacoes'>Informações Gerais</div>
+   <div id='lisenca'>Lisença</div>
+</section>
+
+
+
+<!-- CARERGAMENTO DE SCRIPTS -->
+    
+    <script src="cordova.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOupnrlVYYyFWwtT7IPHk7hP6tm5n51DU" async defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/setup.js" ></script>
+    <script src="js/app.js" ></script>
+    <script src="js/startApp.js" ></script>
+    <script src="js/linksApp.js" ></script>
+    <script src="js/buscaDados.js" ></script>
+    <script src="js/montaAPP.js" ></script>
+    <script src="js/maps.js" ></script>
+   
+
+</body>
+</html>
+
+
+
+

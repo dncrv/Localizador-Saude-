@@ -1,0 +1,321 @@
+*
+{
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+input
+{
+-webkit-user-select: auto !important;
+-khtml-user-select: auto !important;
+-moz-user-select: auto !important;
+-ms-user-select: auto !important;
+user-select: auto !important;
+}
+
+
+body, html{
+	background-color: #234A8F !important;
+	margin: 0;
+	padding: 0;
+	height: 99.7%;
+	width: 100%;
+}
+
+
+/* PAINEIS */
+#corpo-app, #painel-principal, #painel-mapa{
+	height: 100%;
+	transition: 0.3s opacity;
+}
+
+
+.some{
+	display: none;
+}
+
+/* SELETOR DE CIDADE */
+.modal-cidade{
+    border-radius: 5px;
+    box-shadow: 0 0 5px #666;
+    background-color: #eaeaea;
+    display: none;
+    position: absolute;
+    margin: 30px 5%;
+    width: 90%;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+
+.modal-cidade p{
+    padding-top: 10px;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.modal-cidade .corpo{
+    width: 100%;
+}
+
+.modal-cidade button{
+    width: 90%;
+    border-radius: 5px;
+    color:  #FFF;
+    font-weight: 700;
+    border: 2px #002090 solid;
+    background-color: #1040b0;
+    padding: 8px;
+    margin: 10px 5%;
+
+}
+
+
+.modal-cidade select{
+    width: 90%;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 10px 5%;
+}
+
+
+
+
+
+/* TELA DE INICIO/CARREGAMENTO */
+.todo{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/splash.png');
+	background-size: 100% 100%;
+}
+
+.todo img{
+	width: 16%;
+	height: auto;
+	margin:  30px 42%;
+}
+
+
+
+
+/* TELA PRINCIPAL */
+.barra-info{
+	background-color: #008fc8;
+	width: 100%;
+
+	padding: 3px;
+}
+
+.barra-info div{
+	float: left;
+	display: block;
+	height: 100%;
+}
+
+.barra-info .menu-info{
+	margin-left: 10px;
+	transform: translateY(12%);
+	margin-bottom: 0;
+	height: 100%;
+	font-size: 20px;
+	vertical-align: middle;
+	color: #FFF;
+	font-weight: 700;
+}
+
+.barra-info #nome-sessao{
+	float: right;
+	margin-right: 10px;
+	transform: translateY(12%);
+	margin-bottom: 0;
+	height: 100%;
+	font-size: 2rem;
+	vertical-align: middle;
+	color: #FFF;
+	font-weight: 700;
+	display: none;
+}
+
+.barra-info img{
+	height: 100%;
+	float: right;
+}
+
+.banner{
+	height: 18%;
+	width: 100%;
+	padding-top: 2.5%;
+	display: table;
+}
+
+.banner img{
+	width: 100%;
+	height: auto;
+}
+.container-total{
+	height: 74%;
+	margin: 0;
+}
+
+.sobe-container{
+	height: 92%;
+}
+
+.some{
+	display: none;
+}
+
+.container-total iframe{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	
+}
+
+.botao img{
+	margin-top: 5px;
+	max-width: 100%;
+	height: auto;
+}
+.botao p{
+	color: white;
+	padding-top: 10px;
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin: 0 !important;
+}
+.linha-botoes{
+	height: 32%;
+	margin: 0;
+}
+
+
+.bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+
+
+/* MODAIS MENU */
+#modalUnidade, 
+#modalDentista,
+#modalServicos,
+#modalAvalie,
+#modalAedes,
+#modalNoticia,
+#modalMarcacao,
+#modalInfo  {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+	bottom: 0;
+	left: 0;
+	background-color: #234A8F;
+	height: 74%;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: auto;
+	transition: 0.3s transform;
+}
+
+#modalMapas  {
+	display: none;
+	position: absolute;
+	z-index: 10100;
+	bottom: 0;
+	left: 0;
+	background-color: #234A8F;
+	height: 92%;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: auto;
+	transition: 0.3s transform;
+}
+
+
+
+#modalUnidadeItens div,
+#modalDentistaItens div,
+#modalServicoItens div,
+#modalMarcacao div,
+#modalInfo div,
+#menuMarcadores div{
+	width: 100%;
+	border-bottom: 1px;
+	color:  #fff;
+	font-size: 12px;
+	padding: 10px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+
+#map{
+	width: 100%;
+	height: 91%;
+	background-color: rgba(0,0,0,0); 
+}
+
+#menuMarcadores{
+	display: none;
+	position: absolute;
+	z-index: 11000;
+	bottom: 0;
+	left: 0;
+	background-color: #234A8F;
+	width: 100%;
+	margin-bottom: 0;
+	margin-top: auto;
+	max-height: 280px;
+	transform: translateY(-45px);
+}
+
+
+#modalUnidadeItens div:nth-child(2n+1),
+#modalDentistaItens div:nth-child(2n+1),
+#modalServicoItens div:nth-child(2n+1),
+#modalAvalie div:nth-child(2n+1),
+#modalAedes div:nth-child(2n+1),
+#modalMarcacao div:nth-child(2n+1),
+#modalInfo div:nth-child(2n+1),
+#menuMarcadores div:nth-child(2n+1){
+	background-color: #008fc8;
+	
+}
+
+#modalAvalie form,
+#modalAedes form{
+	width: 100%;
+	min-height: 100%;
+	width: 100%;
+	border-bottom: 1px;
+	color:  #fff;
+	font-size: 15px;
+	padding: 10px;
+	margin: 0;
+	background-color: #008fc8;
+
+}
+
+#modalAvalie label,
+#modalAedes label{
+	margin-top: 10px;
+
+}
+
+#modalMarcacao iframe{
+	width: 100%;
+	margin: 0;
+	border: none;
+	height: 99%;
+}
