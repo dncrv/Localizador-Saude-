@@ -13,20 +13,20 @@ O Sistema foi desenvolvido em PHP + JS + CSS + HTML onde todas as requisições 
 
 ** Metas a curto Prazo:
 
--- Inserir o sistema de envio de arquivos dos formulários
--- Inserir a busca de notícias;
--- Ajustar o sistema para a Criação e o Envio das notícias via JSON;
--- Ajustar leitura de "clicks" para evitar BUGs no iOS;
--- Alterar busca de dados para inserir Sub-Sessões;
--- Remover sessões do codigo, para abrir diversas possibilidades de portabilidade para outros ramos;
--- Criar sistema de busca dentro das sessões;
--- Ajustar iFrames para acesso ao servidor no iOS;
+	- Inserir o sistema de envio de arquivos dos formulários
+	- Inserir a busca de notícias;
+	- Ajustar o sistema para a Criação e o Envio das notícias via JSON;
+	- Ajustar leitura de "clicks" para evitar BUGs no iOS;
+	- Alterar busca de dados para inserir Sub-Sessões;
+	- Remover sessões do codigo, para abrir diversas possibilidades de portabilidade para outros ramos;
+	- Criar sistema de busca dentro das sessões;
+	- Ajustar iFrames para acesso ao servidor no iOS;
 
 
 ** Metas de Medio Prazo:
 
--- Ajustar e alterar TODO o codigo para tornalo OO;
--- Medir performace para verificar a necessidade de portar para uma tecnologia como ReactNative;
+	- Ajustar e alterar TODO o codigo para tornalo OO;
+	- Medir performace para verificar a necessidade de portar para uma tecnologia como ReactNative;
 
 
 Expectativas da verão final:
